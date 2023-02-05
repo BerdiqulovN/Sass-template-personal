@@ -1,10 +1,11 @@
 .location {
+    margin-bottom: 160px;
     margin: 0 auto;
     background-image: url(../../images/feature-bg.png);
     background-repeat: no-repeat;
-    background-position: 400px 120px;
-
+    background-position: 400px 35px;
     position: relative;
+    z-index: -1;
 
     &__inner {
         margin-bottom: 380px;
@@ -61,11 +62,16 @@
 
             }
 
+           
             &-img {
                 position: relative;
                 margin-bottom: 48px;
-
             }
+            &-img_first {
+                margin-bottom: 10px;
+                // position: relative;
+            }
+           
 
             &-img_three {
                 // margin-top: 36px;
@@ -92,8 +98,11 @@
                 }
 
                 &-link {
+                    padding: 17px 18.5px;
                     margin-top: 32px;
                     margin-bottom: 0;
+                    background: #E7816B;
+                    border-radius: 8px;
 
                 }
             }
@@ -162,6 +171,7 @@
                     &-title {
                         padding: 0;
                         margin: 0;
+                        text-align: center;
                     }
 
                     &-text {

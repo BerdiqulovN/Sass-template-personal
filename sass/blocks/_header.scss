@@ -1,7 +1,9 @@
 .header {
+margin: 0 auto;
     padding: 64px 0 67px;
 
     &__inner {
+        max-width:1111px;
         @extend %d-f-row;
         margin-top: 64px;
 
@@ -77,6 +79,39 @@
 
 
 /*-------------------------------------------------Tablet-----------------------------------------------*/
+
+
+@media only screen and (max-width:768px) {
+
+
+    .header {
+        padding: 64px 0;
+
+        &__inner {
+           max-width: 689px;
+            margin-top: 0;
+
+
+            &--logo {
+
+                &-img {
+                    width: 202px;
+                    height: 24px;
+                }
+            }
+
+        }
+
+
+
+
+    }
+
+
+}
+
+/*-------------------------------------------------mobile-----------------------------------------------*/
+
 
 @media only screen and (max-width:375px) {
 
