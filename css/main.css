@@ -1675,7 +1675,6 @@ img {
     font-size: 48px;
     line-height: 48px;
     color: #FFFFFF;
-    text-align: center;
   }
   .contact--items-text {
     width: 445px;
@@ -1683,7 +1682,6 @@ img {
     font-size: 16px;
     line-height: 26px;
     color: #FFFFFF;
-    text-align: center;
   }
   .contact__form {
     margin-top: 55px;
