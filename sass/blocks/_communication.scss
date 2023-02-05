@@ -1,0 +1,68 @@
+.call-to-action {
+
+    position: relative;
+
+
+
+    .communication {
+        width: 1111px;
+        position: absolute;
+
+        top: -215px;
+        left: calc(50% - 718px);
+
+
+        &__inner {
+            margin-bottom: 100px;
+            padding: 72px 96px 46px;
+            @extend %d-f-row;
+            background-image: url(../../images/communication-bg.png);
+            background-position: right;
+            background-color: #E7816B;
+            border-radius: 15px;
+        }
+
+        &--texts {
+            width: 459px;
+
+            &-title {
+                margin: 0;
+                padding: 0;
+                font-weight: 500;
+                font-size: 40px;
+                line-height: 40px;
+                color: #FFFFFF;
+            }
+
+            &-text {
+                margin-top: 12px;
+                margin-bottom: 0;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 26px;
+                color: #FFFFFF;
+            }
+        }
+
+        &-link {
+            padding: 17px 18.5px;
+            background: #FFFFFF;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 15px;
+            line-height: 22px;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            color: #333136;
+
+        }
+
+        &-link:hover {
+            background-color: #FFAD9B;
+            color: #FFFFFF;
+
+        }
+
+    }
+}

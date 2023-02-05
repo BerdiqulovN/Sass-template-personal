@@ -1,0 +1,190 @@
+.designs {
+
+    &__inner {
+        margin-bottom: 160px;
+    }
+
+    &__cards {
+        @extend %d-f-row;
+
+        &---left {
+            position: relative;
+            overflow: hidden;
+
+            &--items {
+                padding: 273px 137px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                background-image: url(../../images/web-design.jpg);
+                background-repeat: no-repeat;
+                background-size: 541px 640px;
+                border-radius: 15px;
+
+                &-title {
+                    position: relative;
+                    z-index: 999;
+                    margin: 0;
+                    padding: 0;
+                    text-transform: uppercase;
+                    font-weight: 500;
+                    font-size: 40px;
+                    line-height: 48px;
+                    letter-spacing: 2px;
+                    color: #FFFFFF;
+                }
+
+                &-link {
+                    position: relative;
+                    z-index: 999;
+                    margin-top: 24px;
+                    display: flex;
+                    gap: 21px;
+                    text-decoration: none;
+                    text-transform: uppercase;
+                    font-weight: 500;
+                    font-size: 15px;
+                    line-height: 22px;
+                    letter-spacing: 5px;
+                    text-transform: uppercase;
+                    color: #FFFFFF;
+                }
+            }
+
+
+        }
+
+        .overlay {
+            display: none;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: #E7816B;
+            opacity: 0.8;
+            border-radius: 15px;
+        }
+
+        &---left:hover .overlay {
+            display: block;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: #E7816B;
+            opacity: 0.8;
+            border-radius: 15px;
+            cursor: pointer;
+
+        }
+
+        &---right {
+            // position: relative;
+            overflow: hidden;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+
+            &--items {
+                position: relative;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                background-repeat: no-repeat;
+                background-size: 541px 308px;
+                border-radius: 15px;
+
+
+                &-title {
+                    position: relative;
+                    z-index: 99;
+                    margin: 0;
+                    padding: 0;
+                    text-transform: uppercase;
+                    font-weight: 500;
+                    font-size: 40px;
+                    line-height: 48px;
+                    letter-spacing: 2px;
+                    color: #FFFFFF;
+                }
+
+                &-link {
+                    position: relative;
+                    z-index: 99;
+                    margin-top: 24px;
+                    display: flex;
+                    gap: 21px;
+                    text-decoration: none;
+                    text-transform: uppercase;
+                    font-weight: 500;
+                    font-size: 15px;
+                    line-height: 22px;
+                    letter-spacing: 5px;
+                    text-transform: uppercase;
+                    color: #FFFFFF;
+                }
+            }
+            .overlay {
+                display: none;
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background-color: #E7816B;
+                opacity: 0.8;
+                border-radius: 15px;
+            }
+        
+        
+            &--items:hover .overlay {
+                display: block;
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background-color: #E7816B;
+                opacity: 0.8;
+                border-radius: 15px;
+                cursor: pointer;
+        
+            }
+        
+        }
+
+        
+
+    }
+
+    .design__cards---right--items_first {
+        padding: 107px 143px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-image: url(../../images/app-design.jpg);
+        background-repeat: no-repeat;
+        background-size: 541px 308px;
+        border-radius: 15px;
+    }
+
+    
+    .design__cards---right--items_second {
+        padding: 107px 88px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-image: url(../../images/graphic-design.jpg);
+        background-repeat: no-repeat;
+        background-size: 541px 308px;
+        border-radius: 15px;
+
+    }}

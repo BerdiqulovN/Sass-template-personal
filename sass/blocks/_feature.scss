@@ -1,0 +1,99 @@
+.feature {
+    margin: 0 auto;
+    background-image: url(../../images/feature-bg.png);
+    background-repeat: no-repeat;
+    background-position: 400px 120px;
+
+    position: relative;
+
+    &__inner {
+        margin-bottom: 380px;
+        display: flex;
+        flex-direction: column;
+    }
+
+
+    &---list {
+        @extend %d-f-row;
+        @extend %l-unstyled;
+
+
+        &--item {
+
+            width: 350px;
+            @extend %d-f-column;
+
+            &-bg {
+                position: absolute;
+                background: linear-gradient(90deg, rgba(93, 2, 2, 0.0001) 0%, rgba(93, 2, 2, 0.497569) 100%);
+                opacity: 0.2;
+                width: 202px;
+                height: 202px;
+                mix-blend-mode: normal;
+                opacity: 0.2;
+                transform: matrix(-1, 0, 0, 1, 0, 0);
+                border-radius: 50%;
+                top: -10px;
+            }
+
+            &-bg_two {
+                position: absolute;
+                background: linear-gradient(90deg, rgba(93, 2, 2, 0.0001) 0%, rgba(93, 2, 2, 0.497569) 100%);
+                mix-blend-mode: normal;
+                opacity: 0.2;
+                transform: matrix(0, 1, 1, 0, 0, 0);
+                width: 202px;
+                height: 202px;
+                border-radius: 50%;
+                top: -10px;
+                
+            }
+            &-bg_three {
+                position: absolute;
+                background: linear-gradient(90deg, rgba(93, 2, 2, 0.0001) 0%, rgba(93, 2, 2, 0.497569) 100%);
+                mix-blend-mode: normal;
+                opacity: 0.2;
+                transform: matrix(0, -1, -1, 0, 0, 0);
+                width: 202px;
+                height: 202px;
+                border-radius: 50%;
+                top: -10px;
+                
+            }
+
+            &-img {
+                position: relative;
+                margin-bottom: 48px;
+
+            }
+
+            &-img_three {
+                margin-top: 36px;
+                position: relative;
+                // z-index: 4;
+            }
+
+            &-title {
+                // margin: 0;
+                padding: 0;
+                text-transform: uppercase;
+                font-weight: 500;
+                font-size: 20px;
+                line-height: 26px;
+                text-align: center;
+                letter-spacing: 5px;
+                color: #333136;
+            }
+
+            &-text {
+                margin-top: 32px;
+                margin-bottom: 0;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 26px;
+                text-align: center;
+                color: #333136;
+            }
+        }
+    }
+}

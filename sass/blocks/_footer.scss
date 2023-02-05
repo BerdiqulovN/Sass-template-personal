@@ -1,0 +1,122 @@
+.footer {
+    background-color: #1D1C1E;
+
+    &__inner {
+        margin-top: 144px;
+        margin-bottom: 72px;
+    }
+
+    &__nav {
+        @extend %d-f-row;
+        padding-bottom: 40px;
+
+
+
+
+        &--logo {
+
+            &-img {
+                width: 196px;
+                height: 24px;
+            }
+        }
+
+
+        &---list {
+            width: 370px;
+            @extend %d-f-row;
+            @extend %l-unstyled;
+
+            &--item {
+                text-transform: uppercase;
+
+                &-link {
+                    text-decoration: none;
+                    font-weight: 400;
+                    font-size: 14px;
+                    line-height: 14px;
+                    letter-spacing: 2px;
+                    color: #ffffff;
+                }
+                &-link::after{
+                    content: "";
+                    width: 100%;
+                    height: 2px;
+                    display: block;
+                    background-color: #000000;
+                }
+                &-link:hover:after{
+                    content: "";
+                    width: 100%;
+                    height: 2px;
+                    display: block;
+                    background-color: #fff;
+                    transition: 0.2s;
+                }
+            }
+
+        }
+
+    }
+
+    &-line {
+        width: 1111px;
+        height: 1px;
+        background-color: #FFFFFF;
+        opacity: 0.1;
+    }
+
+
+    &---list {
+        margin: 31px 0 0;
+        @extend %d-f-row;
+        @extend %l-unstyled;
+
+        &--item {
+            display: flex;
+            flex-direction: column;
+
+            &-title {
+                margin: 0;
+                padding: 0;
+                font-weight: 700;
+                font-size: 16px;
+                line-height: 26px;
+                color: #FFFFFF;
+                mix-blend-mode: normal;
+                opacity: 0.5;
+
+            }
+            &-subtitle{
+                margin: 0;
+                font-weight: 700;
+                font-size: 16px;
+                line-height: 26px;
+                color: #FFFFFF;
+                mix-blend-mode: normal;
+                opacity: 0.5;
+            }
+        }
+
+        &--links {
+            width: 184px;
+            display: flex;
+            justify-content: space-between;
+            align-self: end;
+
+
+            &-link{
+                background-color: #E7816B;
+                // color: #E7816B;
+
+               
+            }
+            &-link:hover{
+                color: #cbbab6; 
+           
+                // background-color: #e71515;
+            }
+        }
+        
+    }
+}

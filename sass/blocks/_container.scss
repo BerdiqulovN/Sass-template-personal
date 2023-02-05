@@ -1,4 +1,14 @@
 .container{
-    width: 100%;
+    width: 1440px;
     margin: 0 auto;
+    padding: 0 165px;
 }
+
+@media only screen and(max-width:768px){
+    .container{
+        max-width: 689px;
+        margin: 0 auto;
+        padding: 0 40px; 
+    }
+} 
+
