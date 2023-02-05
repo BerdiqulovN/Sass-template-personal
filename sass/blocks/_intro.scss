@@ -1,5 +1,6 @@
 .intro {
-    margin-bottom: 160px;
+    // margin-bottom: 160px;
+    margin: 0 0 160px -24px;
 
     &__inner {
         padding: 0 95px;
@@ -27,7 +28,8 @@
 
         &-text {
             margin-top: 30px;
-            margin-bottom: 58px;                             /*----------mb 40 bolishi kerak lekin a ni ustiga chiqib qolyapti*/
+            margin-bottom: 58px;
+            /*----------mb 40 bolishi kerak lekin a ni ustiga chiqib qolyapti*/
             font-weight: 400;
             font-size: 16px;
             line-height: 26px;
@@ -47,8 +49,9 @@
             background: #FFFFFF;
             border-radius: 8px;
         }
-        &-link:hover{
-           
+
+        &-link:hover {
+
             padding: 17px 25px;
             text-decoration: none;
             font-weight: 500;
@@ -67,4 +70,184 @@
         margin-top: 139px;
         filter: drop-shadow(20px -40px 80px rgba(93, 2, 2, 0.497569));
     }
+}
+
+
+
+
+
+@media only screen and(max-width:768px) {
+
+    .intro {
+
+        margin-bottom: 120px;
+
+        &__inner {
+            width: 689px;
+            padding: 0 58px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-direction: column;
+            background: #E7816B;
+            background-image: url(../../images/intro-bg.png);
+            background-repeat: no-repeat;
+            background-position: 170px 100px;
+            border-radius: 15px;
+        }
+
+        &--items {
+            padding: 60px 0 69px;
+            width: 573px;
+            // @extend %d-f-row;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+            &-title {
+                width: 573px;
+                padding: 0;
+                margin: 0;
+                text-align: center;
+                font-weight: 500;
+                font-size: 48px;
+                line-height: 48px;
+                color: #FFFFFF;
+            }
+
+            &-text {
+                width: 445px;
+                margin-top: 20px;
+                margin-bottom: 19px;
+                text-align: center;
+                /*----------mb 40 bolishi kerak lekin a ni ustiga chiqib qolyapti*/
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 26px;
+                color: #FFFFFF;
+
+            }
+
+            &-link {
+                padding: 17px 25px;
+                text-decoration: none;
+                font-weight: 500;
+                font-size: 15px;
+                line-height: 22px;
+                letter-spacing: 1px;
+                text-transform: uppercase;
+                color: #333136;
+                background: #FFFFFF;
+                border-radius: 8px;
+            }
+
+            &-link:hover {
+
+                padding: 17px 25px;
+                text-decoration: none;
+                font-weight: 500;
+                font-size: 15px;
+                line-height: 22px;
+                letter-spacing: 1px;
+                text-transform: uppercase;
+                color: #FFFFFF;
+                background: #FFAD9B;
+                border-radius: 8px;
+            }
+
+        }
+
+        &-img {
+            margin-top: 69px;
+            filter: drop-shadow(20px -40px 80px rgba(93, 2, 2, 0.497569));
+        }
+    }
+
+
+}
+
+
+@media only screen and(max-width:375px) {
+
+    .intro {
+        width: 375px;
+        margin-bottom: 120px;
+
+        &__inner {
+            margin: 0 ;
+            width: 375px;
+            padding: 0 24px; 
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-direction: column;
+            background: #E7816B;
+            background-image: url(../../images/intro-bg.png);
+            background-repeat: no-repeat;
+            background-position: 0 100px;
+            border-radius: 0;
+        }
+
+        &--items {
+            padding: 0;
+            width: 327px;
+            flex-direction: column;
+
+
+            &-title {
+                width: 327px;
+                margin: 80px 0 0;
+                font-size: 32px;
+                line-height: 36px;
+            }
+
+            &-text {
+                width: 327px;
+                margin-top: 14px;
+                margin-bottom: 24px;
+                text-align: center;
+                font-weight: 400;
+                font-size: 15px;
+                line-height: 25px;
+                color: #FFFFFF;
+
+            }
+
+            &-link {
+                padding: 17px 25px;
+                text-decoration: none;
+                font-weight: 500;
+                font-size: 15px;
+                line-height: 22px;
+                letter-spacing: 1px;
+                text-transform: uppercase;
+                color: #333136;
+                background: #FFFFFF;
+                border-radius: 8px;
+            }
+
+            &-link:hover {
+
+                padding: 17px 25px;
+                text-decoration: none;
+                font-weight: 500;
+                font-size: 15px;
+                line-height: 22px;
+                letter-spacing: 1px;
+                text-transform: uppercase;
+                color: #FFFFFF;
+                background: #FFAD9B;
+                border-radius: 8px;
+            }
+
+        }
+
+        &-img {
+            margin-top: 80px;
+            filter: drop-shadow(20px -40px 80px rgba(93, 2, 2, 0.497569));
+        }
+    }
+
+
 }

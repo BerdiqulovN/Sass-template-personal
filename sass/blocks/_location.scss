@@ -1,4 +1,4 @@
-.feature {
+.location {
     margin: 0 auto;
     background-image: url(../../images/feature-bg.png);
     background-repeat: no-repeat;
@@ -30,9 +30,9 @@
                 width: 202px;
                 height: 202px;
                 mix-blend-mode: normal;
-                transform: matrix(-1, 0, 0, 1, 0, 0);
+                transform: matrix(0, -1, -1, 0, 0, 0);
                 border-radius: 50%;
-                top: -10px;
+                top: -25px;
             }
 
             &-bg_two {
@@ -40,11 +40,11 @@
                 background: linear-gradient(90deg, rgba(93, 2, 2, 0.0001) 0%, rgba(93, 2, 2, 0.497569) 100%);
                 mix-blend-mode: normal;
                 opacity: 0.2;
-                transform: matrix(0, 1, 1, 0, 0, 0);
+                transform: matrix(-1, 0, 0, 1, 0, 0);
                 width: 202px;
                 height: 202px;
                 border-radius: 50%;
-                top: -10px;
+                top: -25px;
 
             }
 
@@ -53,11 +53,11 @@
                 background: linear-gradient(90deg, rgba(93, 2, 2, 0.0001) 0%, rgba(93, 2, 2, 0.497569) 100%);
                 mix-blend-mode: normal;
                 opacity: 0.2;
-                transform: matrix(0, -1, -1, 0, 0, 0);
+                transform: matrix(0, 1, 1, 0, 0, 0);
                 width: 202px;
                 height: 202px;
                 border-radius: 50%;
-                top: -10px;
+                top: -25px;
 
             }
 
@@ -68,14 +68,20 @@
             }
 
             &-img_three {
-                margin-top: 36px;
+                // margin-top: 36px;
                 position: relative;
             }
 
             &-texts {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
 
                 &-title {
                     padding: 0;
+                    margin-top: 48px;
+                    margin-bottom: 0;
                     text-transform: uppercase;
                     font-weight: 500;
                     font-size: 20px;
@@ -85,14 +91,10 @@
                     color: #333136;
                 }
 
-                &-text {
+                &-link {
                     margin-top: 32px;
                     margin-bottom: 0;
-                    font-weight: 400;
-                    font-size: 16px;
-                    line-height: 26px;
-                    text-align: center;
-                    color: #333136;
+
                 }
             }
         }

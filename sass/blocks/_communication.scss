@@ -1,4 +1,4 @@
-.call-to-action {
+.call-to-action {    
 
     position: relative;
 
@@ -13,7 +13,6 @@
 
 
         &__inner {
-            margin-bottom: 100px;
             padding: 72px 96px 46px;
             @extend %d-f-row;
             background-image: url(../../images/communication-bg.png);
@@ -65,4 +64,176 @@
         }
 
     }
+}
+
+
+
+
+@media only screen and(max-width:768px){
+
+
+    .call-to-action {    
+
+        position: relative;
+    
+    
+    
+        .communication {
+            width: 690px;
+            position: absolute;
+    
+            top: -260px;
+            left: calc(50% - 385px);
+    
+    
+            &__inner {
+                padding: 56px 59px;
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+                justify-content: center;
+                background-image: url(../../images/communication-rs-bg.png);
+                background-position: 0 0;
+                background-color: #E7816B;
+                border-radius: 15px;
+            }
+    
+            &--texts {
+                margin-bottom: 32px;
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+                justify-content: center;
+    
+                &-title {
+                    width: 335px;
+                    margin: 0;
+                    padding: 0;
+                    text-align: center;
+                    font-weight: 500;
+                    font-size: 40px;
+                    line-height: 40px;
+                    color: #FFFFFF;
+                }
+    
+                &-text {
+                    width: 459px;
+                    margin-top: 12px;
+                    margin-bottom: 0;
+                    text-align: center;
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 26px;
+                    color: #FFFFFF;
+                }
+            }
+    
+            &-link {
+                padding: 17px 18.5px;
+                background: #FFFFFF;
+                border-radius: 8px;
+                text-decoration: none;
+                font-weight: 500;
+                font-size: 15px;
+                line-height: 22px;
+                letter-spacing: 1px;
+                text-transform: uppercase;
+                color: #333136;
+    
+            }
+    
+            &-link:hover {
+                background-color: #FFAD9B;
+                color: #FFFFFF;
+    
+            }
+    
+        }
+    } 
+    
+}
+
+
+@media only screen and(max-width:375px){
+
+
+    .call-to-action {    
+
+        position: relative;
+    
+    
+    
+        .communication {
+            width: 327px;
+            position: absolute;
+    
+            top: -180px;
+            left: calc(50% - 165px);
+    
+    
+            &__inner {
+                padding: 64px 24px;
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+                justify-content: center;
+                background-image: url(../../images/communication-mb-bg.png);
+                background-position: 325px -10px;
+                background-color: #E7816B;
+                border-radius: 15px;
+            }
+    
+            &--texts {
+                margin-bottom: 32px;
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+                justify-content: center;
+    
+                &-title {
+                    width: 279px;
+                    margin: 0;
+                    padding: 0;
+                    text-align: center;
+                    font-weight: 500;
+                    font-size: 32px;
+                    line-height: 36px;
+                    color: #FFFFFF;
+                }
+    
+                &-text {
+                    width: 279px;
+                    margin-top: 6px;
+                    margin-bottom: 0;
+                    text-align: center;
+                    font-weight: 400;
+                    font-size: 15px;
+                    line-height: 25px;
+                    color: #FFFFFF;
+                }
+            }
+    
+            &-link {
+                padding: 17px 18.5px;
+                background: #FFFFFF;
+                border-radius: 8px;
+                text-decoration: none;
+                font-weight: 500;
+                font-size: 15px;
+                line-height: 22px;
+                letter-spacing: 1px;
+                text-transform: uppercase;
+                color: #333136;
+    
+            }
+    
+            &-link:hover {
+                background-color: #FFAD9B;
+                color: #FFFFFF;
+    
+            }
+    
+        }
+    } 
+    
 }
