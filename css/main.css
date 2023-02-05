@@ -1817,6 +1817,9 @@ img {
   margin-bottom: 0;
   background: #E7816B;
   border-radius: 8px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: white;
 }
 
 @media only screen and (max-width: 768px) {
@@ -1869,7 +1872,7 @@ img {
     margin: 0;
     text-align: center;
   }
-  .feature---list--item-texts-text {
+  .feature---list--item-texts-link {
     margin-top: 16px;
     margin-bottom: 0;
     text-align: start;

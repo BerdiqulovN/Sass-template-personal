@@ -103,6 +103,9 @@
                     margin-bottom: 0;
                     background: #E7816B;
                     border-radius: 8px;
+                    text-decoration: none;
+                    text-transform: uppercase;
+                    color:white;
 
                 }
             }
@@ -174,7 +177,7 @@
                         text-align: center;
                     }
 
-                    &-text {
+                    &-link {
                         margin-top: 16px;
                         margin-bottom: 0;
                         text-align: start;
